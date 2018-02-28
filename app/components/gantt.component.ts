@@ -41,16 +41,6 @@ export class GanttComponent implements OnInit {
                 { view: "scrollbar", scroll: "x", id: "scrollHor" }
             ]
         };
-
-        gantt.config.columns = [
-            { name: "text", label: "Task name", tree: true, width: 180,resize:true },
-            { name: "resource", label: "Resource", width: 40,resize:true },
-            { name: "start_date", label: "Start time", width: 75 },
-            { name: "end_date", label: "End date", width: 75 },
-            { name: "progress", label: "Progress" },
-        ]
-
-
         gantt.config.sort = true;
         gantt.init(this.ganttContainer.nativeElement);
 
