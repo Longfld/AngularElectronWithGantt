@@ -29,7 +29,9 @@
       // other libraries
       'rxjs':                      'npm:rxjs',
       'tslib': 'npm:tslib/tslib.js',
-      'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
+      'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
+      'dhtmlx-gantt': 'npm:dhtmlx-gantt/codebase/dhtmlxgantt.js',
+      'dhtmlxgantt-tooltip':"npm:dhtmlx-gantt/codebase/ext/dhtmlxgantt_tooltip.js"
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -37,10 +39,10 @@
         main: './main.js',
         defaultExtension: 'js'
       },
-      rxjs: {
-        defaultExtension: 'js'
-      },
+      rxjs: {defaultExtension: 'js'},
       'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
+      "dhtmlx-gantt": {defaultExtension: 'js'},
+      "dhtmlxgantt-tooltip'": { defaultExtension: 'js'},
     }
   });
 })(this);
