@@ -4,7 +4,8 @@ import { LinkService } from "../services/link.service";
 import { Task } from "../models/Task";
 import { Link } from "../models/Link";
 
-declare let gantt: any;
+import { gantt } from "dhtmlx-gantt"
+import "dhtmlxgantt-tooltip";
 
 @Component({
     selector: "gantt",
